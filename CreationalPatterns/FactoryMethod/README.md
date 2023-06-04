@@ -70,3 +70,20 @@ of creating Animal Subclass Objects.
 Classes that need to create Objects -
 but don't care about how -
 can use the `AnimalFactory` interface.
+
+---
+
+```
+Item     <==(creates)===   Creator
+ ^                            ^
+ |                            |
+Concrete                   Concrete
+Item                       Creator
+```
+
+The `Creator` interface declares the method `Item factoryMethod()`,
+that the `ConcreteCreator`s overload.
+
+The Simple Factory Idiom is like having a
+single `ConcreteCreator` that creates
+Items.
