@@ -31,3 +31,5 @@ the object creation is moved to a separate class.
 The sole purpose of this class is creating objects.
 
 Simple Factory Idiom.
+
+### Simple Factory Idiom != Factory Method
