@@ -29,3 +29,5 @@ the `Blacksmith` class must be modified.
 In the Factory Pattern,
 the object creation is moved to a separate class.
 The sole purpose of this class is creating objects.
+
+Simple Factory Idiom.
