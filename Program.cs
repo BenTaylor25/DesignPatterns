@@ -1,9 +1,4 @@
 ﻿
-// FactoryMethod.FactoryMethod.Execute();
-// Builder.Builder.Execute();
-
-// Composite.Composite.Execute();
-
 void PrintMenu(string[] options)
 {
     int i = 0;
@@ -13,7 +8,7 @@ void PrintMenu(string[] options)
     }
 }
 
-int MenuInput(int maxValue)
+string MenuInput(string[] options)
 {
     int choice = -1;
     do
@@ -26,9 +21,9 @@ int MenuInput(int maxValue)
             choice = -1;
         }
 
-    } while (choice < 0 || choice > maxValue);
+    } while (choice < 0 || choice >= options.Length);
 
-    return choice;
+    return options[choice];
 }
 
 void CreationalPatternsMenu()
@@ -36,34 +31,39 @@ void CreationalPatternsMenu()
     bool repeat = true;
     while (repeat)
     {
-        PrintMenu(new string[]{
+        var menuOptions = new string[]{
             "Back",
             "Abstract Factory",
             "Builder",
             "Factory Method",
             "Prototype",
             "Singleton"
-        });
+        };
 
-        switch (MenuInput(5))
+        PrintMenu(menuOptions);
+
+        switch (MenuInput(menuOptions))
         {
-            case 0:
+            case "Back":
                 repeat = false;
                 break;
-            case 1:
+            case "Abstract Factory":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 2:
+            case "Builder":
                 Builder.Builder.Execute();
                 break;
-            case 3:
+            case "Factory Method":
                 FactoryMethod.FactoryMethod.Execute();
                 break;
-            case 4:
+            case "Prototype":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 5:
+            case "Singleton":
                 Console.WriteLine("not implemented yet");
+                break;
+            default:
+                Console.WriteLine("Error: Creational Pattern switch failed");
                 break;
         }
     }
@@ -74,7 +74,7 @@ void StructuralPatternsMenu()
     bool repeat = true;
     while (repeat)
     {
-        PrintMenu(new string[]{
+        var menuOptions = new string[]{
             "Back",
             "Adapter",
             "Bridge",
@@ -83,33 +83,38 @@ void StructuralPatternsMenu()
             "Facade",
             "Flyweight",
             "Proxy"
-        });
+        };
 
-        switch (MenuInput(7))
+        PrintMenu(menuOptions);
+
+        switch (MenuInput(menuOptions))
         {
-            case 0:
+            case "Back":
                 repeat = false;
                 break;
-            case 1:
+            case "Adapter":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 2:
+            case "Bridge":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 3:
+            case "Composite":
                 Composite.Composite.Execute();
                 break;
-            case 4:
+            case "Decorator":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 5:
+            case "Facade":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 6:
+            case "Flyweight":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 7:
+            case "Proxy":
                 Console.WriteLine("not implemented yet");
+                break;
+            default:
+                Console.WriteLine("Error: Structural Pattern switch failed");
                 break;
         }
     }
@@ -120,7 +125,7 @@ void BehaviouralPatternsMenu()
     bool repeat = true;
     while (repeat)
     {
-        PrintMenu(new string[]{
+        var menuOptions = new string[]{
             "Back",
             "Chain of Responsibility",
             "Command",
@@ -133,45 +138,50 @@ void BehaviouralPatternsMenu()
             "Strategy",
             "Template Method",
             "Visitor"
-        });
+        };
 
-        switch (MenuInput(11))
+        PrintMenu(menuOptions);
+
+        switch (MenuInput(menuOptions))
         {
-            case 0:
+            case "Back":
                 repeat = false;
                 break;
-            case 1:
+            case "Chain of Responsibility":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 2:
+            case "Command":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 3:
+            case "Interpretor":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 4:
+            case "Itorator":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 5:
+            case "Mediator":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 6:
+            case "Memento":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 7:
+            case "Observer":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 8:
+            case "State":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 9:
+            case "Strategy":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 10:
+            case "Template Method":
                 Console.WriteLine("not implemented yet");
                 break;
-            case 11:
+            case "Visitor":
                 Console.WriteLine("not implemented yet");
+                break;
+            default:
+                Console.WriteLine("Error: Behavioural Pattern switch failed");
                 break;
         }
     }
@@ -182,26 +192,31 @@ void MainMenu()
     bool repeat = true;
     while (repeat)
     {
-        PrintMenu(new string[]{
+        var menuOptions = new string[]{
             "Quit",
             "Creational Patterns",
             "Structural Patterns",
             "Behavioural Patterns"
-        });
+        };
 
-        switch (MenuInput(3))
+        PrintMenu(menuOptions);
+
+        switch (MenuInput(menuOptions))
         {
-            case 0:
+            case "Quit":
                 repeat = false;
                 break;
-            case 1:
+            case "Creational Patterns":
                 CreationalPatternsMenu();
                 break;
-            case 2:
+            case "Structural Patterns":
                 StructuralPatternsMenu();
                 break;
-            case 3:
+            case "Behavioural Patterns":
                 BehaviouralPatternsMenu();
+                break;
+            default:
+                Console.WriteLine("Error: Main Menu switch failed");
                 break;
         }
     }
