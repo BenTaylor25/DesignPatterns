@@ -2,6 +2,8 @@
 // FactoryMethod.FactoryMethod.Execute();
 // Builder.Builder.Execute();
 
+Composite.Composite.Execute();
+
 void MainMenu()
 {
     bool repeat = true;
@@ -31,4 +33,4 @@ void MainMenu()
     }
 }
 
-MainMenu();
+// MainMenu();
