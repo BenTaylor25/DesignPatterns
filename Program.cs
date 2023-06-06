@@ -71,12 +71,110 @@ void CreationalPatternsMenu()
 
 void StructuralPatternsMenu()
 {
+    bool repeat = true;
+    while (repeat)
+    {
+        PrintMenu(new string[]{
+            "Back",
+            "Adapter",
+            "Bridge",
+            "Composite",
+            "Decorator",
+            "Facade",
+            "Flyweight",
+            "Proxy"
+        });
 
+        switch (MenuInput(7))
+        {
+            case 0:
+                repeat = false;
+                break;
+            case 1:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 2:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 3:
+                Composite.Composite.Execute();
+                break;
+            case 4:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 5:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 6:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 7:
+                Console.WriteLine("not implemented yet");
+                break;
+        }
+    }
 }
 
 void BehaviouralPatternsMenu()
 {
+    bool repeat = true;
+    while (repeat)
+    {
+        PrintMenu(new string[]{
+            "Back",
+            "Chain of Responsibility",
+            "Command",
+            "Interpreter",
+            "Iterator",
+            "Mediator",
+            "Memento",
+            "Observer",
+            "State",
+            "Strategy",
+            "Template Method",
+            "Visitor"
+        });
 
+        switch (MenuInput(11))
+        {
+            case 0:
+                repeat = false;
+                break;
+            case 1:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 2:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 3:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 4:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 5:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 6:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 7:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 8:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 9:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 10:
+                Console.WriteLine("not implemented yet");
+                break;
+            case 11:
+                Console.WriteLine("not implemented yet");
+                break;
+        }
+    }
 }
 
 void MainMenu()
