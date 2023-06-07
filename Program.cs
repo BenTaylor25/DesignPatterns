@@ -57,7 +57,7 @@ void CreationalPatternsMenu()
                 FactoryMethod.FactoryMethod.Execute();
                 break;
             case "Prototype":
-                Console.WriteLine("not implemented yet");
+                Prototype.Prototype.Execute();
                 break;
             case "Singleton":
                 Console.WriteLine("not implemented yet");
