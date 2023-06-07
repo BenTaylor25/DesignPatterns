@@ -13,7 +13,7 @@ string MenuInput(string[] options)
     int choice = -1;
     do
     {
-        Console.Write("-->");
+        Console.Write("--> ");
         string? inp = Console.ReadLine();
 
         bool invalidInp = !int.TryParse(inp, out choice);
@@ -41,8 +41,10 @@ void CreationalPatternsMenu()
         };
 
         PrintMenu(menuOptions);
+        string choice = MenuInput(menuOptions);
+        Console.WriteLine();
 
-        switch (MenuInput(menuOptions))
+        switch (choice)
         {
             case "Back":
                 repeat = false;
@@ -66,6 +68,10 @@ void CreationalPatternsMenu()
                 Console.WriteLine("Error: Creational Pattern switch failed");
                 break;
         }
+
+        if (choice != "Back") {
+            Console.WriteLine();
+        }
     }
 }
 
@@ -86,8 +92,10 @@ void StructuralPatternsMenu()
         };
 
         PrintMenu(menuOptions);
+        string choice = MenuInput(menuOptions);
+        Console.WriteLine();
 
-        switch (MenuInput(menuOptions))
+        switch (choice)
         {
             case "Back":
                 repeat = false;
@@ -117,6 +125,10 @@ void StructuralPatternsMenu()
                 Console.WriteLine("Error: Structural Pattern switch failed");
                 break;
         }
+
+        if (choice != "Back") {
+            Console.WriteLine();
+        }
     }
 }
 
@@ -141,8 +153,10 @@ void BehaviouralPatternsMenu()
         };
 
         PrintMenu(menuOptions);
+        string choice = MenuInput(menuOptions);
+        Console.WriteLine();
 
-        switch (MenuInput(menuOptions))
+        switch (choice)
         {
             case "Back":
                 repeat = false;
@@ -184,6 +198,10 @@ void BehaviouralPatternsMenu()
                 Console.WriteLine("Error: Behavioural Pattern switch failed");
                 break;
         }
+
+        if (choice != "Back") {
+            Console.WriteLine();
+        }
     }
 }
 
@@ -200,8 +218,13 @@ void MainMenu()
         };
 
         PrintMenu(menuOptions);
+        string choice = MenuInput(menuOptions);
 
-        switch (MenuInput(menuOptions))
+        if (choice != "Quit") {
+            Console.WriteLine();
+        }
+
+        switch (choice)
         {
             case "Quit":
                 repeat = false;
