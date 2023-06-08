@@ -180,7 +180,7 @@ void BehaviouralPatternsMenu()
                 Console.WriteLine("not implemented yet");
                 break;
             case "Observer":
-                Console.WriteLine("not implemented yet");
+                Observer.Observer.Execute();
                 break;
             case "State":
                 Console.WriteLine("not implemented yet");
