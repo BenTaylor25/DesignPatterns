@@ -113,7 +113,7 @@ void StructuralPatternsMenu()
                 Console.WriteLine("not implemented yet");
                 break;
             case "Facade":
-                Console.WriteLine("not implemented yet");
+                Facade.Facade.Execute();
                 break;
             case "Flyweight":
                 Console.WriteLine("not implemented yet");
