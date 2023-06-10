@@ -104,7 +104,7 @@ void StructuralPatternsMenu()
                 Console.WriteLine("not implemented yet");
                 break;
             case "Bridge":
-                Console.WriteLine("not implemented yet");
+                Bridge.Bridge.Execute();
                 break;
             case "Composite":
                 Composite.Composite.Execute();
