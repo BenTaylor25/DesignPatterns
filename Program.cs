@@ -50,7 +50,7 @@ void CreationalPatternsMenu()
                 repeat = false;
                 break;
             case "Abstract Factory":
-                Console.WriteLine("not implemented yet");
+                AbstractFactory.AbstractFactory.Execute();
                 break;
             case "Builder":
                 Builder.Builder.Execute();
