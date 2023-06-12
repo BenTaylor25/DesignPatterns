@@ -119,7 +119,7 @@ void StructuralPatternsMenu()
                 Console.WriteLine("not implemented yet");
                 break;
             case "Proxy":
-                Console.WriteLine("not implemented yet");
+                Proxy.Proxy.Execute();
                 break;
             default:
                 Console.WriteLine("Error: Structural Pattern switch failed");
