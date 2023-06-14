@@ -192,7 +192,7 @@ void BehaviouralPatternsMenu()
                 Console.WriteLine("not implemented yet");
                 break;
             case "Visitor":
-                Console.WriteLine("not implemented yet");
+                Visitor.Visitor.Execute();
                 break;
             default:
                 Console.WriteLine("Error: Behavioural Pattern switch failed");
