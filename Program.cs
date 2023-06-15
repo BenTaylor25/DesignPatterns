@@ -62,7 +62,7 @@ void CreationalPatternsMenu()
                 Prototype.Prototype.Execute();
                 break;
             case "Singleton":
-                Console.WriteLine("not implemented yet");
+                Singleton.Singleton.Execute();
                 break;
             default:
                 Console.WriteLine("Error: Creational Pattern switch failed");
