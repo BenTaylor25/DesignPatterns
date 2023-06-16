@@ -183,7 +183,7 @@ void BehaviouralPatternsMenu()
                 Observer.Observer.Execute();
                 break;
             case "State":
-                Console.WriteLine("not implemented yet");
+                State.State.Execute();
                 break;
             case "Strategy":
                 Console.WriteLine("not implemented yet");
