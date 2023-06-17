@@ -165,7 +165,7 @@ void BehaviouralPatternsMenu()
                 ChainOfResponsibility.ChainOfResponsibility.Execute();
                 break;
             case "Command":
-                Console.WriteLine("not implemented yet");
+                Command.Command.Execute();
                 break;
             case "Interpretor":
                 Console.WriteLine("not implemented yet");
