@@ -186,7 +186,7 @@ void BehaviouralPatternsMenu()
                 State.State.Execute();
                 break;
             case "Strategy":
-                Console.WriteLine("not implemented yet");
+                Strategy.Strategy.Execute();
                 break;
             case "Template Method":
                 Console.WriteLine("not implemented yet");
