@@ -101,7 +101,7 @@ void StructuralPatternsMenu()
                 repeat = false;
                 break;
             case "Adapter":
-                Console.WriteLine("not implemented yet");
+                Adapter.Adapter.Execute();
                 break;
             case "Bridge":
                 Bridge.Bridge.Execute();
