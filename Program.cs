@@ -110,7 +110,7 @@ void StructuralPatternsMenu()
                 Composite.Composite.Execute();
                 break;
             case "Decorator":
-                Console.WriteLine("not implemented yet");
+                Decorator.Decorator.Execute();
                 break;
             case "Facade":
                 Facade.Facade.Execute();
