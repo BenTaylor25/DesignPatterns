@@ -116,7 +116,7 @@ void StructuralPatternsMenu()
                 Facade.Facade.Execute();
                 break;
             case "Flyweight":
-                Console.WriteLine("not implemented yet");
+                Flyweight.Flyweight.Execute();
                 break;
             case "Proxy":
                 Proxy.Proxy.Execute();
