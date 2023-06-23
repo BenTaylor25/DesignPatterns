@@ -171,7 +171,7 @@ void BehaviouralPatternsMenu()
                 Console.WriteLine("not implemented yet");
                 break;
             case "Iterator":
-                Console.WriteLine("not implemented yet");
+                Iterator.Iterator.Execute();
                 break;
             case "Mediator":
                 Mediator.Mediator.Execute();
