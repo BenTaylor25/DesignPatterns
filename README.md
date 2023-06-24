@@ -102,6 +102,21 @@ Blacksmith depends on interface
 depending on what it has been given.
 
 ## Prototype
+Prototype is object Cloning.  
+The constructor should accept
+an object of it's own class to
+clone all values onto the new
+object.
 
+```cs
+Car car1 = new Car("black", "fiesta");
+
+// this is a reference copy
+Car alsoCar1 = car1;
+
+// this should create a clone
+// (if the Prototype pattern has been applied)
+Car car2 = new Car(car1);
+```
 
 ## Singleton
