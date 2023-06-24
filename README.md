@@ -120,3 +120,10 @@ Car car2 = new Car(car1);
 ```
 
 ## Singleton
+The Singleton Pattern ensures that a class
+can only have one instance.
+
+e.g.
+For a simulation / game, you probably only
+want to have one instance of the `World`
+class.
