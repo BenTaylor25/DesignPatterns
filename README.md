@@ -42,6 +42,21 @@ The Creational Patterns are:
 ## Abstract Factory
 (see Factory Method first)
 
+The Abstract Factory pattern should be used
+when you have families of related objects.  
+That is, each factory is now able to create
+different objects, and the client chooses
+which one the factory should create.
+
+e.g.
+Intel and AMD are both able to create
+CPUs *and* GPUs.
+The client has access to a Manufacturer
+(Intel or AMD), and chooses whether it
+wants to create a CPU or GPU.
+(Both concrete manufacturers are able
+to do this).
+
 ## Builder
 When a class has a large number of optional
 fields, use the Builder pattern to avoid
@@ -78,6 +93,13 @@ an object) can depend on the interface
 so that it can be given any Factory
 (i.e. any way of deciding which object
 to instantiate).
+
+e.g.
+Blacksmith depends on interface
+`IWeaponCreator`, so that it can use
+`RandomWeaponCreator` or
+`SequentialWeaponCreator` interchangeably
+depending on what it has been given.
 
 ## Prototype
 
