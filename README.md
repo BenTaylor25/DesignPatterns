@@ -61,7 +61,23 @@ Person person = new Person("Ben", null, 19, null, null);
 ```
 
 ## Factory Method
+When an Object needs to instantiate an
+unknown Concrete Type (of a known
+Interface), the main Object should not
+handle the logic that decides which
+Concrete Type is created. Instead,
+this should be handled by a Factory.
 
+If there are multiple ways to decide
+which Concrete Type should be
+instantiated (i.e. a class has multiple
+factories), we can use an interface
+with a Factory Method.  
+The main Object (that needs to create
+an object) can depend on the interface
+so that it can be given any Factory
+(i.e. any way of deciding which object
+to instantiate).
 
 ## Prototype
 
