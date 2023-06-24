@@ -142,3 +142,23 @@ The Structural Patterns are:
 - Facade
 - Flyweight
 - Proxy
+
+
+
+# Behavioural Patterns
+
+Beharioural Patterns are patterns that
+define how objects communicate.
+
+The Behavioural Patterns are:
+- Chain of Responsibility
+- Command
+- Interpreter
+- Iterator
+- Mediator
+- Memento
+- Observer
+- State
+- Strategy
+- Template Method
+- Visitor
