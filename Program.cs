@@ -177,7 +177,7 @@ void BehaviouralPatternsMenu()
                 Mediator.Mediator.Execute();
                 break;
             case "Memento":
-                Console.WriteLine("not implemented yet");
+                Memento.Memento.Execute();
                 break;
             case "Observer":
                 Observer.Observer.Execute();
