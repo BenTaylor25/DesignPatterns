@@ -127,3 +127,18 @@ e.g.
 For a simulation / game, you probably only
 want to have one instance of the `World`
 class.
+
+
+# Structural Patterns
+
+Structural Patterns are patterns that
+define how classes are related.
+
+The Structural Patterns are:
+- Adapter
+- Bridge
+- Composite
+- Decorator
+- Facade
+- Flyweight
+- Proxy
