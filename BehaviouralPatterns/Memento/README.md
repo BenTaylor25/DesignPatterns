@@ -1,8 +1,13 @@
 # Memento
 
-The Memento Pattern is commonly
-applicable to applications with
-an undo feature.
+The Memento Pattern is used to
+externalise an object's internal
+state to enable restoration, but
+without breaking the rules of
+encapsulation.
+
+Memento is commonly used for
+applications with an undo feature.
 
 Specifically, a Memento is used
 as a snapshot of the current
