@@ -189,7 +189,7 @@ void BehaviouralPatternsMenu()
                 Strategy.Strategy.Execute();
                 break;
             case "Template Method":
-                Console.WriteLine("not implemented yet");
+                TemplateMethod.TemplateMethod.Execute();
                 break;
             case "Visitor":
                 Visitor.Visitor.Execute();
