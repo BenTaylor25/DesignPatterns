@@ -167,8 +167,8 @@ void BehaviouralPatternsMenu()
             case "Command":
                 Command.Command.Execute();
                 break;
-            case "Interpretor":
-                Console.WriteLine("not implemented yet");
+            case "Interpreter":
+                Interpreter.Interpreter.Execute();
                 break;
             case "Iterator":
                 Iterator.Iterator.Execute();
