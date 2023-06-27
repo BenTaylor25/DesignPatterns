@@ -27,6 +27,7 @@ split into 3 categories:
 - Behavioural
 
 ---
+---
 
 # Creational Patterns
 
@@ -130,6 +131,7 @@ want to have one instance of the `World`
 class.
 
 ---
+---
 
 # Structural Patterns
 
@@ -204,6 +206,7 @@ Box {
 cost of items they contain, and this
 should work regardless of nesting levels.
 
+---
 ---
 
 # Behavioural Patterns
