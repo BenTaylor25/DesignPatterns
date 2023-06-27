@@ -181,6 +181,29 @@ the dimensions to avoid poor scaling.
 var petrolCar = new Car(new Petrol());
 ```
 
+## Composite
+
+The Composite Pattern says that containers
+should be able to describe/summarise their
+contents.
+
+e.g.
+```
+Box {
+    Box {
+        Box {
+            Product (£8)
+        }
+        Product (£7)
+    }
+    Product (£5)
+    Product (£2)
+}
+```
+`Box`es should be able to get the total
+cost of items they contain, and this
+should work regardless of nesting levels.
+
 ---
 
 # Behavioural Patterns
