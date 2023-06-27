@@ -164,6 +164,23 @@ access to it, or it would break the system),
 we can create an Adapter in order to make
 it compatable with `IStudent`.
 
+## Bridge
+
+When you have classes with multiple dimensions
+of variablility  
+e.g.
+```
+PetrolCar     DieselCar     ElectricCar
+PetrolBike    DieselBike    ElectricBike
+PetrolTruck   DieselTruck   ElectricTruck
+```
+you should use composition to capture one of
+the dimensions to avoid poor scaling.
+
+```cs
+var petrolCar = new Car(new Petrol());
+```
+
 ---
 
 # Behavioural Patterns
