@@ -26,6 +26,7 @@ split into 3 categories:
 - Structural
 - Behavioural
 
+---
 
 # Creational Patterns
 
@@ -128,6 +129,7 @@ For a simulation / game, you probably only
 want to have one instance of the `World`
 class.
 
+---
 
 # Structural Patterns
 
@@ -143,7 +145,26 @@ The Structural Patterns are:
 - Flyweight
 - Proxy
 
+## Adapter
 
+The adapter pattern is used to
+make unchangeable classes
+compatable with a new interface.
+
+```cs
+interface IStudent {}
+
+class UniversityStudent {}
+class CollegeStudent : IStudent {}
+```
+
+If the `UniversityStudent` class cannot
+be modified (either because we don't have
+access to it, or it would break the system),
+we can create an Adapter in order to make
+it compatable with `IStudent`.
+
+---
 
 # Behavioural Patterns
 
