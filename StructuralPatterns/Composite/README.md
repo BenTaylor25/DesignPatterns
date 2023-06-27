@@ -2,13 +2,16 @@
 
 Consider a box that contains the following:
 ```
-- Box
-    - Box
-        - Box
-            - Product (£8)
-        - Product (£7)
-    - Product (£5)
-    - Product (£2)
+Box {
+    Box {
+        Box {
+            Product (£8)
+        }
+        Product (£7)
+    }
+    Product (£5)
+    Product (£2)
+}
 ```
 
 How can we calculate the total price of the outer Box?
