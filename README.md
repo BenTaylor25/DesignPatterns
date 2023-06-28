@@ -229,6 +229,31 @@ var teaWithMilk = new Milk(new Tea());
 The pattern can be nested to bring lots
 of behaviours together.
 
+## Facade
+
+The Facade Pattern takes a group of classes
+(usually from a library, or segregated part
+of the codebase), and provides a single point
+of interaction, which means clients do not
+need to interact with the underlying classes.
+
+```cs
+Cup teaCup = HotDrinkFacade.MakeTea();
+
+// Rather than
+
+Cup teaCup = new();
+Cupboard cupboard = new();
+Kettle kettle = new();
+Fridge fridge = new();
+
+teaCup.Add(cupboard.GetSugar());
+teaCup.Add(cupboard.GetTeabag());
+kettle.BoilWater();
+teaCup.Add(kettle.GetWater());
+teaCup.Add(fridge.GetMilk());
+```
+
 ---
 ---
 
