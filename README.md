@@ -211,7 +211,7 @@ should work regardless of nesting levels.
 
 # Behavioural Patterns
 
-Beharioural Patterns are patterns that
+Behavioural Patterns are patterns that
 define how objects communicate.
 
 The Behavioural Patterns are:
