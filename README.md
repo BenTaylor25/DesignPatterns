@@ -18,7 +18,8 @@ For each design pattern, I have a
 markdown file for notes, and a
 practical demo written in C#.
 I have made a very simple CLI to
-execute the various demo files.
+execute the various demo files.  
+Run the CLI with `dotnet run`.
 
 The big 23 Design Patterns are
 split into 3 categories:
