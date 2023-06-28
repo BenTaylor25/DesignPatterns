@@ -207,6 +207,28 @@ Box {
 cost of items they contain, and this
 should work regardless of nesting levels.
 
+## Decorator
+
+The Decorator Pattern uses nested composition
+to allow objects to be modified by wrappers.
+
+```cs
+class Milk : TeaDecorator
+{
+    public Milk(ITea tea) : base(tea) {}
+
+    public override string GetInfo()
+    {
+        return $"{base.GetInfo()}, Milk";
+    }
+}
+
+var teaWithMilk = new Milk(new Tea());
+```
+
+The pattern can be nested to bring lots
+of behaviours together.
+
 ---
 ---
 
