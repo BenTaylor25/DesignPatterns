@@ -151,7 +151,7 @@ The Structural Patterns are:
 
 The adapter pattern is used to
 make unchangeable classes
-compatable with a new interface.
+compatible with a new interface.
 
 ```cs
 interface IStudent {}
@@ -164,12 +164,12 @@ If the `UniversityStudent` class cannot
 be modified (either because we don't have
 access to it, or it would break the system),
 we can create an Adapter in order to make
-it compatable with `IStudent`.
+it compatible with `IStudent`.
 
 ## Bridge
 
 When you have classes with multiple dimensions
-of variablility  
+of variability  
 e.g.
 ```
 PetrolCar     DieselCar     ElectricCar
