@@ -304,3 +304,35 @@ The Behavioural Patterns are:
 - Strategy
 - Template Method
 - Visitor
+
+## Chain of Responsibility
+
+The Chain of Responsibility pattern
+allows you to join together independent
+tasks.
+
+e.g. In order to make a purchase, you
+need to
+- Check that the item is in stock,
+- Check that the user can afford it,
+- Send a request to the bank,
+- Check that the payment has been received,
+- Add order to database,
+- ...
+
+You could use the Chain of Responsibility
+pattern to join these steps together.
+
+```cs
+var fulfilOrder = new CheckStockHandler();
+var _userBalance = new CheckUserBalanceHandler();
+var _sendBankReq = new BankReqHandler();
+// ...
+
+fulfilOrder.SetNextHandler(_userBalance);
+_userBalance.SetNextHandler(_sendBankReq);
+// ...
+```
+
+This way you only need to invoke `fulfilOrder`
+in order to complete all tasks.
