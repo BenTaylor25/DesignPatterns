@@ -343,3 +343,10 @@ The Command Pattern separates the action
 of an object from the object itself in order
 to allow the action to be easily undone, or
 repeated.
+
+## Interpreter
+
+The Interpreter pattern is the least common
+of the 23. It is used to convert one format
+of data to another. This can include equating
+/ simplifying mathematical expressions.
