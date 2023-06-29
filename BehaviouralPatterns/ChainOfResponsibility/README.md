@@ -15,7 +15,7 @@ e.g.
 - Handle shipping.
 - Deliver a notification.
 
-We can define these Handlers seperately
+We can define these Handlers separately
 and link them together.
 
 e.g.
