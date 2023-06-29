@@ -269,6 +269,13 @@ can be abstracted out into a
 flyweight object and shared by
 the objects using references.
 
+## Proxy
+
+The Proxy Pattern sets up an
+intermediate step in the
+interaction between objects.
+(Much like internet proxy servers).
+
 ---
 ---
 
