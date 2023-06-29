@@ -336,3 +336,10 @@ _userBalance.SetNextHandler(_sendBankReq);
 
 This way you only need to invoke `fulfilOrder`
 in order to complete all tasks.
+
+## Command
+
+The Command Pattern separates the action
+of an object from the object itself in order
+to allow the action to be easily undone, or
+repeated.
