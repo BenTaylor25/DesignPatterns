@@ -79,7 +79,7 @@ namespace ChainOfResponsibility
         }
     }
 
-    class ShippingHanlder : BaseHandler
+    class ShippingHandler : BaseHandler
     {
         // sample data
         List<string> knownAddresses = new List<string>{"Oxford", "London"};
@@ -108,7 +108,7 @@ namespace ChainOfResponsibility
         {
             var fulfilOrder = new InventoryHandler();
             var _payment = new PaymentHandler();
-            var _shipping = new ShippingHanlder();
+            var _shipping = new ShippingHandler();
             fulfilOrder.SetNextHandler(_payment);
             _payment.SetNextHandler(_shipping);
 
