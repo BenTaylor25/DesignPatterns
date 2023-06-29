@@ -254,6 +254,21 @@ teaCup.Add(kettle.GetWater());
 teaCup.Add(fridge.GetMilk());
 ```
 
+## Flyweight
+
+The Flyweight Pattern is designed
+to reduce memory consumption when
+a large number of objects are
+created from a single class.
+
+When a frequently-instantiated
+class has several immutable attributes
+whose value should be shared by
+multiple objects, the shared data
+can be abstracted out into a
+flyweight object and shared by
+the objects using references.
+
 ---
 ---
 
