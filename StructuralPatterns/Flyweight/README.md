@@ -16,15 +16,15 @@ class Book
 {
     string name;
     double price;
+    string subgenre;
     string genre;
-    string publisher;
 }
 ```
 
 The `name` and `price` attributes
 are likely to vary between most pairs
-of `Book`s, but the `genre` and
-`publisher` may be shared by many.
+of `Book`s, but the `subgenre` and
+`genre` may be shared by many.
 
 In this case, we can separate the
 shared attributes into a flyweight
