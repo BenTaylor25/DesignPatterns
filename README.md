@@ -350,3 +350,21 @@ The Interpreter pattern is the least common
 of the 23. It is used to convert one format
 of data to another. This can include equating
 / simplifying mathematical expressions.
+
+## Iterator
+
+The Iterator pattern is when you abstract
+out the traversal of a collection, and
+just interact with the next item.
+
+```cs
+while (it.HasNext())
+{
+    if (!it.AtStart())
+    {
+        Console.Write(", ");
+    }
+    Console.Write(it.GetNext());
+}
+Console.WriteLine();
+```
