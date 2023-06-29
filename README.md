@@ -368,3 +368,15 @@ while (it.HasNext())
 }
 Console.WriteLine();
 ```
+
+## Mediator
+
+The Mediator pattern prevents many-to-many
+object communication by giving each object
+a single point of reference.
+
+Instead of 20 Aeroplanes trying to coordinate
+who will land when, they each speak to the
+Air Traffic Control Tower (Mediator).  
+The Mediator is then able to make decisions
+e.g. who is allowed to land next.
