@@ -276,6 +276,14 @@ intermediate step in the
 interaction between objects.
 (Much like internet proxy servers).
 
+This can restrict access of particular
+objects, but is perhaps more useful
+for caching.  
+e.g. set up a proxy to read from a
+database so that you can get the value
+from the proxy multiple times with
+only one database call.
+
 ---
 ---
 
