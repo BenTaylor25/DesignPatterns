@@ -417,3 +417,33 @@ example, can use depend on a
 sorting interface, rather than a
 concrete implementation, which
 allows them to use any implementation.
+
+## Template Method
+
+When you have an algorithm with slight
+variations, you can use the Template
+Method pattern to specify the variation.
+
+In order to make a hot drink, you always
+need to:
+1. Boil the kettle
+1. Find a cup
+1. Add stuff to the cup
+1. Pour the water
+1. Add more stuff to the cup
+1. Remove stuff from the cup
+1. Stir
+
+If you're making a Tea with milk and sugar,
+you want to add a teabag and sugar at step
+3, add milk at step 5, and remove the teabag
+at step 6.  
+If you're making a black Coffee with sugar,
+you want to add coffee grains and suage at
+step 3, but you don't want to do anything
+at steps 5 or 6.
+
+The Template Method pattern suggests making
+the generic algorithm an abstract class, and
+overwriting some methods in the Tea and Coffee
+children.
