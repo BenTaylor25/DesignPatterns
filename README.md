@@ -387,3 +387,12 @@ The Memento pattern is used to create a
 save of another object's internal state.  
 The object can then use the Memento to
 restore the previous state.
+
+## Observer
+
+The Observer pattern works like social
+media follower notifications.  
+Obects can subscribe to other objects
+that implement the Observer pattern,
+and the subscriber can then be notified
+when the target broadcasts a change.
