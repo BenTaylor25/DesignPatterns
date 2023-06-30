@@ -380,3 +380,10 @@ who will land when, they each speak to the
 Air Traffic Control Tower (Mediator).  
 The Mediator is then able to make decisions
 e.g. who is allowed to land next.
+
+## Memento
+
+The Memento pattern is used to create a
+save of another object's internal state.  
+The object can then use the Memento to
+restore the previous state.
