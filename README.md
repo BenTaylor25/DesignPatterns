@@ -396,3 +396,13 @@ Obects can subscribe to other objects
 that implement the Observer pattern,
 and the subscriber can then be notified
 when the target broadcasts a change.
+
+## State
+
+The State pattern allows an object
+to react to the same action in a
+different way depending on the current
+state. (Like a Finite State Machine).
+
+The current state is usually stored
+as an object on the stateful class.
