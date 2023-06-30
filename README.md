@@ -406,3 +406,14 @@ state. (Like a Finite State Machine).
 
 The current state is usually stored
 as an object on the stateful class.
+
+## Strategy
+
+The Strategy pattern abstracts out
+the goal of an algorithm from its
+implementation.  
+Classes that need sorting, for
+example, can use depend on a
+sorting interface, rather than a
+concrete implementation, which
+allows them to use any implementation.
