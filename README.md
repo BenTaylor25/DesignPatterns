@@ -447,3 +447,13 @@ The Template Method pattern suggests making
 the generic algorithm an abstract class, and
 overwriting some methods in the Tea and Coffee
 children.
+
+## Visitor
+
+The Visitor pattern seperates algorithm
+implementation from the class that uses it.
+The pattern introduces complexity, so it
+should be used with care.  
+For similar algorithms (e.g. `getArea()`
+for different shapes), the implementations
+can be grouped together into one class.
