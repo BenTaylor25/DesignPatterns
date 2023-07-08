@@ -380,3 +380,80 @@ who will land when, they each speak to the
 Air Traffic Control Tower (Mediator).  
 The Mediator is then able to make decisions
 e.g. who is allowed to land next.
+
+## Memento
+
+The Memento pattern is used to create a
+save of another object's internal state.  
+The object can then use the Memento to
+restore the previous state.
+
+## Observer
+
+The Observer pattern works like social
+media follower notifications.  
+Obects can subscribe to other objects
+that implement the Observer pattern,
+and the subscriber can then be notified
+when the target broadcasts a change.
+
+## State
+
+The State pattern allows an object
+to react to the same action in a
+different way depending on the current
+state. (Like a Finite State Machine).
+
+The current state is usually stored
+as an object on the stateful class.
+
+## Strategy
+
+The Strategy pattern abstracts out
+the goal of an algorithm from its
+implementation.  
+Classes that need sorting, for
+example, can use depend on a
+sorting interface, rather than a
+concrete implementation, which
+allows them to use any implementation.
+
+## Template Method
+
+When you have an algorithm with slight
+variations, you can use the Template
+Method pattern to specify the variation.
+
+In order to make a hot drink, you always
+need to:
+1. Boil the kettle
+1. Find a cup
+1. Add stuff to the cup
+1. Pour the water
+1. Add more stuff to the cup
+1. Remove stuff from the cup
+1. Stir
+
+If you're making a Tea with milk and sugar,
+you want to add a teabag and sugar at step
+3, add milk at step 5, and remove the teabag
+at step 6.  
+If you're making a black Coffee with sugar,
+you want to add coffee grains and suage at
+step 3, but you don't want to do anything
+at steps 5 or 6.
+
+The Template Method pattern suggests making
+the generic algorithm an abstract class, and
+overwriting some methods in the Tea and Coffee
+children.
+
+## Visitor
+
+The Visitor pattern seperates algorithm
+implementation from the class that uses it.
+The pattern introduces complexity, so it
+should be used with care.  
+For similar algorithms (e.g. `getArea()`
+for different shapes), the implementations
+can be grouped together into one class.
