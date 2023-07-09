@@ -122,3 +122,55 @@ List<IEmployee> employees = new List<IEmployees>
     new Manager { FirstName = "Bob", LastName = "Smith" }
 };
 ```
+
+
+# Liskov Substitution Principle
+
+The Liskov Substitution Principle states that
+class instantiation should always be able to
+be replaced with subclass instantiation.
+
+```cs
+Employee emp = new Employee();
+
+Console.WriteLine(emp.GetManager());
+```
+
+If `Manager` inherits from `Employee`,
+the first line should be replaceable with
+
+```cs
+Employee emp = new Manager();
+```
+
+and the program should not break.
+
+Child classes can change the behaviour of
+the parent, but they should not be able
+to remove behaviour.
+
+The Liskov principle also states that you
+cannot strengthen preconditions or weaken
+postconditions of inherited methods.
+
+```cs
+class Employee
+{
+    public void Foo(int x) {}
+}
+
+class Manager : Employee
+{
+    public void Foo(int x)
+    {
+        if (x < 0)
+        {
+            throw new Exception();
+        }
+    }
+}
+```
+
+This violates LSP because `Manager.Foo()`
+may throw an error where `Employee.Foo()`
+doesn't.
