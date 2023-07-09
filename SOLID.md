@@ -83,3 +83,42 @@ class FileEncryption {
 ```
 
 Encryption should be handled by a different class.
+
+
+## Open-Closed Principle
+
+The Open-Closed Principle states that objects should
+be open for extension, but closed for modification.
+
+During development, things change all of the time,
+but once a build reaches deployment, you need to
+be careful.
+
+Consider the following list of Employees:
+
+```cs
+List<Employee> employees = new List<Employee>
+{
+    new Employee { FirstName = "Ben", LastName = "Taylor" },
+    new Employee { FirstName = "Bob", LastName = "Smith" }
+};
+```
+
+It would be difficult to add a `Manager`, `Executive`,
+or other distinct member of staff to this collection.  
+Developers may feel inclined to add a property to
+the Employee class to indicate the type, but this
+violates OCP.
+
+If, instead, we use an interface for the collection
+type, we can instead use a new class to add the
+new functionality. Open for extension, Closed for
+modification.
+
+```cs
+List<IEmployee> employees = new List<IEmployees>
+{
+    new Employee { FirstName = "Ben", LastName = "Taylor" },
+    new Manager { FirstName = "Bob", LastName = "Smith" }
+};
+```
