@@ -250,3 +250,59 @@ class PremiumVideo : IVideoActions
 By splitting up the interface, we can just opt
 in to the actions we want to perform.
 
+
+# Dependency Inversion Principle
+
+The Dependency Inversion Principle states that
+we should depend on abstractions rather than
+concrete classes.
+
+```cs
+class DebitCard {}
+class Cash {}
+
+class ShoppingCart
+{
+    public double Total { get; set; }
+    // ...
+
+    public void Purchase(DebitCard card)
+    {
+        card.MakePayment(Total);
+    }
+
+    public void Purchase(Cash wallet)
+    {
+        wallet.MakePayment(Total);
+    }
+}
+```
+
+This is bad because we have unnecessary repetition.
+Further, if a new payment method was introduced
+(e.g. `CreditCard`), we would need to make a lot
+of code changes to allow for this.
+
+The `Purchase()` method should instead depend on
+a common interface.
+
+```cs
+interface PaymentMethod
+{
+    void MakePayment(double amount);
+}
+
+class DebitCard : PaymentMethod {}
+class Cash : PaymentMethod {}
+
+class ShoppingCart
+{
+    public double Total { get; set; }
+    // ...
+
+    public void Purchase(PaymentMethod paymentMethod)
+    {
+        card.MakePayment(Total);
+    }
+}
+```
