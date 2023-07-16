@@ -174,3 +174,79 @@ class Manager : Employee
 This violates LSP because `Manager.Foo()`
 may throw an error where `Employee.Foo()`
 doesn't.
+
+
+# Interface Segregation Principle
+
+The Interface Segregation Principle states that many
+specific Interfaces are better than few general
+Interfaces.
+
+```cs
+interface IVideoActions
+{
+    double GetNumberOfHoursPlayed();
+    void PlayRandomAd();
+}
+
+class Video : IVideoActions
+{
+    public double GetNumberOfHoursPlayed()
+    {
+        // ...
+    }
+
+    public void PlayRandomAd()
+    {
+        // ...
+    }
+}
+
+class PremiumVideo : IVideoActions
+{
+    public double GetNumberOfHoursPlayed()
+    {
+        // ...
+    }
+
+    // We are forced to implement a method
+    // that we don't want to.
+}
+```
+
+```cs
+interface IVideoActions
+{
+    double GetNumberOfHoursPlayed();
+}
+
+interface IAdsActions
+{
+    void PlayRandomAd();
+}
+
+class Video : IVideoActions, IAdsActions
+{
+    public double GetNumberOfHoursPlayed()
+    {
+        // ...
+    }
+
+    public void PlayRandomAd()
+    {
+        // ...
+    }
+}
+
+class PremiumVideo : IVideoActions
+{
+    public double GetNumberOfHoursPlayed()
+    {
+        // ...
+    }
+}
+```
+
+By splitting up the interface, we can just opt
+in to the actions we want to perform.
+
