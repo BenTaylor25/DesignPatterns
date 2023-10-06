@@ -38,7 +38,7 @@ The Builder pattern splits the constructor into
 seperate, chainable steps.
 
 ```cs
-Person person = new("Ben")   // required parameters
+Person person = new PersonBuilder("Ben")   // required parameters
     .SetFavColour("Blue")   // optional parameters
     .SetAge(19)   // in any order
     .Build();
