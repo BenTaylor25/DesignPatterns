@@ -65,6 +65,18 @@ namespace Composite
             outerBox.AddItem(new Product(4));
             outerBox.AddItem(new Product(5));
 
+            // Box {
+            //     Box {
+            //         Box {
+            //             Product (1)
+            //         }
+            //         Product (2)
+            //         Product (3)
+            //     }
+            //     Product (4)
+            //     Product (5)
+            // }
+
             Console.WriteLine($"Inner Box Sum:  {innerBox.PriceSum()}");    // 1
             Console.WriteLine($"Middle Box Sum: {middleBox.PriceSum()}");   // 6
             Console.WriteLine($"Outer Box Sum:  {outerBox.PriceSum()}");    // 15
